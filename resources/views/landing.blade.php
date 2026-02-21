@@ -6,7 +6,9 @@
     <title>Petani Besi | Sewa Billboard & Baliho Yogyakarta - Jasa Reklame Nasional</title>
     <meta name="description" content="Pusat sewa billboard dan baliho strategis di Yogyakarta & seluruh Indonesia. Cek ketersediaan titik reklame premium dengan eksposur tinggi nasional.">
     <meta name="keywords" content="sewa billboard indonesia, sewa baliho jogja, harga sewa reklame, jasa pasang billboard, titik reklame strategis, billboard jakarta, baliho surabaya, petani besi">
+    <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
 
+    <link rel="apple-touch-icon" href="{{ asset('img/favicon.png') }}">
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
@@ -500,7 +502,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://livingtrade.id/tedi/img/logo.jpg" alt="Logo Petani Besi" style="height: 40px; width: auto;">
+                <img src="{{ asset('img/logo.jpeg') }}" alt="Logo Petani Besi" style="height: 40px; width: auto;">
             </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="fa-solid fa-bars" style="font-size: 1.5rem; color: var(--dark-black);"></i>
@@ -584,6 +586,63 @@
                         </ul>
                         <div class="tagline-text">
                             PETANI BESI — media yang bekerja untuk Anda, setiap hari.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background: #FFFFFF; border-top: 1px solid #EDEDED;">
+        <div class="container">
+            <div class="p-4 p-lg-5" style="border: 1px solid var(--border-color); border-radius: 16px; background: var(--gray-bg);">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-4 mb-4 mb-lg-0 pe-lg-4 tech-line-seo" style="border-bottom: 1px solid #EEE; border-right: none; padding-bottom: 25px;">
+                        <style>
+                            @media (min-width: 992px) {
+                                .tech-line-seo { border-right: 2px solid #EEE !important; border-bottom: none !important; padding-bottom: 0 !important; }
+                            }
+                        </style>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div style="width: 50px; height: 50px; background: var(--primary-red); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.5rem;">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <h4 class="fw-bold text-dark ms-3 mb-0" style="font-size: 1.25rem; letter-spacing: -0.5px; line-height: 1.2;">CAKUPAN AREA<br><span style="color: var(--primary-red);">NASIONAL</span></h4>
+                        </div>
+                        <p class="text-muted small fw-medium mb-0">Petani Besi menjamin konstruksi kokoh dan eksposur visual maksimal untuk setiap kampanye brand Anda di titik-titik paling strategis.</p>
+                    </div>
+
+                    <div class="col-lg-8 ps-lg-5">
+                        <h5 class="fw-800 text-dark mb-3" style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Layanan Sewa Billboard & Baliho:</h5>
+
+                        <div class="row g-2">
+                            <div class="col-md-4 col-6">
+                                <ul class="list-unstyled mb-0" style="font-size: 0.85rem; color: #666;">
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-danger me-2"></i><strong>DI Yogyakarta</strong></li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-danger me-2"></i><strong>DKI Jakarta</strong></li>
+                                    <li class="mb-0"><i class="fa-solid fa-circle-check text-danger me-2"></i><strong>Jawa Barat</strong></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <ul class="list-unstyled mb-0" style="font-size: 0.85rem; color: #666;">
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-danger me-2"></i><strong>Jawa Tengah</strong></li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-danger me-2"></i><strong>Jawa Timur</strong></li>
+                                    <li class="mb-0"><i class="fa-solid fa-circle-check text-danger me-2"></i><strong>Bali & Nusa</strong></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-12 mt-2 mt-md-0">
+                                <ul class="list-unstyled mb-0" style="font-size: 0.85rem; color: #666;">
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-danger me-2"></i><strong>Sumatra</strong></li>
+                                    <li class="mb-2"><i class="fa-solid fa-circle-check text-danger me-2"></i><strong>Kalimantan</strong></li>
+                                    <li class="mb-0"><i class="fa-solid fa-circle-check text-danger me-2"></i><strong>Sulawesi & Papua</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-top" style="font-size: 0.8rem; line-height: 1.6; color: #888;">
+                            Cari titik reklame strategis di: Sleman, Bantul, Jogja Kota, Bandung, Bekasi, Semarang, Solo, Surabaya, Malang, Denpasar, Medan, Palembang, Makassar, dan kabupaten lainnya di seluruh Indonesia.
                         </div>
                     </div>
                 </div>
