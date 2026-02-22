@@ -492,6 +492,145 @@
         .page-btn:hover:not(:disabled) { background: var(--primary-red); color: #fff; border-color: var(--primary-red); transform: translateY(-3px); }
         .page-btn.active { background: var(--primary-red); color: #fff; border-color: var(--primary-red); }
         .page-btn:disabled { opacity: 0.5; cursor: not-allowed; background: #f9f9f9; }
+        /* ========= STAT BAR PREMIUM (FULL WIDTH + BIGGER + RESPONSIVE) ========= */
+.pb-statbar-wrap{ margin-top: 16px; margin-bottom: 34px; }
+
+.pb-statbar{
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  padding: 20px 24px 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pb-statbar:before{
+  content:"";
+  position:absolute;
+  left:0; right:0; top:0;
+  height:2px;
+  background: linear-gradient(90deg, transparent, rgba(217,4,41,.55), transparent);
+  opacity:.75;
+}
+
+.pb-statbar-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  margin-bottom: 12px;
+}
+
+.pb-statbar-note{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.pb-statbar-row{
+  display:flex;
+  align-items:stretch;
+  justify-content:space-between;
+  gap: 0;
+  padding-top: 6px;
+}
+
+.pb-stat{
+  flex:1;
+  min-width:0;
+  padding: 12px 16px 8px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  transition: transform .2s ease;
+}
+
+.pb-stat:hover{ transform: translateY(-1px); }
+
+.pb-stat-main{
+  display:flex;
+  align-items:baseline;
+  justify-content:center;
+  gap: 10px;
+}
+
+.pb-stat-num{
+  font-size: 2.85rem;
+  font-weight: 600;          /* <<< ini kuncinya */
+  letter-spacing: -0.3px;    /* luxury typography biasanya lebih halus */
+  color: var(--dark-black);
+  line-height: 1;
+}
+
+.pb-stat-label{
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* divider premium */
+.pb-divider-line{
+  width:1px;
+  background: linear-gradient(180deg, transparent, #E5E7EB, transparent);
+  margin: 6px 0;
+}
+
+/* accent underline */
+.pb-accent{
+  height:2px;
+  width: 52px;
+  margin: 12px auto 0;
+  border-radius: 999px;
+  background: rgba(15,15,15,.08);
+}
+
+/* warna status */
+.pb-good .pb-stat-num{ color:#16a34a; }
+.pb-bad .pb-stat-num{ color: var(--primary-red); }
+
+.pb-good .pb-accent{ background: rgba(22,163,74,.18); }
+.pb-bad .pb-accent{ background: rgba(217,4,41,.18); }
+
+/* ===== Tablet (<= 992): 2 kolom ===== */
+@media (max-width: 992px){
+  .pb-statbar{ padding: 18px 18px 14px; }
+  .pb-statbar-row{ flex-wrap: wrap; }
+  .pb-divider-line{ display:none; }
+
+  .pb-stat{ flex: 0 0 50%; padding: 12px 12px 8px; }
+  .pb-stat-main{ justify-content:flex-start; }
+  .pb-accent{ margin-left: 0; }
+
+  .pb-stat-num{ font-size: 1.75rem; }
+  .pb-stat-label{ font-size: 0.98rem; }
+}
+
+/* ===== FIX MOBILE: CENTER SEMUA STAT ===== */
+@media (max-width: 576px){
+  .pb-statbar-row{
+    justify-content: center !important;
+  }
+
+  .pb-stat{
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .pb-stat-main{
+    justify-content: center !important;   /* ini kunci: angka+label jadi center */
+    text-align: center;
+  }
+
+  .pb-accent{
+    margin: 12px auto 0 !important;       /* underline center */
+  }
+
+  .pb-stat-label{
+    text-align: center;
+  }
+} 
     </style>
 </head>
 <body>
@@ -551,7 +690,56 @@
             </div>
         </div>
     </div>
+<!-- === STATISTIK LOKASI (FULL WIDTH / DEFAULT ANGKA ADA) === -->
+<div class="container pb-statbar-wrap">
+  <div class="pb-statbar">
+    <div class="pb-statbar-head">
+      <!-- MATCH 1:1 sama Filter Lokasi -->
+     
+      <div class="pb-statbar-note" id="pbStatsNote"></div>
+    </div>
 
+    <div class="pb-statbar-row">
+      <div class="pb-stat">
+        <div class="pb-stat-main">
+          <span class="pb-stat-num" id="statTotal">129</span>
+          <span class="pb-stat-label">Total Titik Lokasi</span>
+        </div>
+        <div class="pb-accent"></div>
+      </div>
+
+      <div class="pb-divider-line"></div>
+
+      <div class="pb-stat">
+        <div class="pb-stat-main">
+          <span class="pb-stat-num" id="statKota">19</span>
+          <span class="pb-stat-label">Kota</span>
+        </div>
+        <div class="pb-accent"></div>
+      </div>
+
+      <div class="pb-divider-line"></div>
+
+      <div class="pb-stat pb-good">
+        <div class="pb-stat-main">
+          <span class="pb-stat-num" id="statTersedia">129</span>
+          <span class="pb-stat-label">Lokasi Tersedia</span>
+        </div>
+        <div class="pb-accent"></div>
+      </div>
+
+      <div class="pb-divider-line"></div>
+
+      <div class="pb-stat pb-bad">
+        <div class="pb-stat-main">
+          <span class="pb-stat-num" id="statTersewa">23</span>
+          <span class="pb-stat-label">Lokasi Tersewa</span>
+        </div>
+        <div class="pb-accent"></div>
+      </div>
+    </div>
+  </div>
+</div>
     <section id="hasil-pencarian">
         <div class="container">
             <div id="summary-container" style="display: none;"></div>
@@ -672,8 +860,8 @@
                             <div class="contact-label"><i class="fa-solid fa-share-nodes"></i> SOCIAL MEDIA</div>
                             <div class="social-tech-box">
                                 <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://wa.me/6281234567890" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/petanibesi.adv" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://wa.me/62816681976" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -682,7 +870,7 @@
         </div>
     </section>
 
-    <section class="py-5" style="background: #fff; border-top: 1px solid #eee;">
+    <section class="py-5 d-none" style="background: #fff; border-top: 1px solid #eee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-muted" style="font-size: 0.85rem; line-height: 1.6;">
@@ -699,7 +887,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/6281234567890?text=Halo%20tim%20Petani%20Besi,%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20sewa%20reklame%20dan%20baliho." class="float-wa" target="_blank" title="Hubungi Kami via WhatsApp">
+    <a href="https://wa.me/62816681976?text=Halo%20tim%20Petani%20Besi,%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20sewa%20reklame%20dan%20baliho." class="float-wa" target="_blank" title="Hubungi Kami via WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 

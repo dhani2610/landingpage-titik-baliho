@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+# Tutup akses ke halaman admin dan login
+Disallow: /admin
+Disallow: /login
+
+# Beritahu lokasi sitemap ke Google
+Sitemap: https://petanibesi.id/sitemap.xml
