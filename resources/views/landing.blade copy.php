@@ -66,52 +66,417 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.04);
             transition: all 0.3s ease;
         }
-        .navbar-brand { font-weight: 900; color: var(--dark-black) !important; letter-spacing: -0.5px; font-size: 1.5rem; }
-        .navbar-brand span { color: var(--primary-red); }
-        .nav-link { font-weight: 600; color: #555 !important; margin: 0 15px; transition: color 0.3s ease; font-size: 0.95rem; }
-        .nav-link:hover { color: var(--primary-red) !important; }
+        .navbar-brand {
+            font-weight: 900;
+            color: var(--dark-black) !important;
+            letter-spacing: -0.5px;
+            font-size: 1.5rem;
+        }
+        .navbar-brand span {
+            color: var(--primary-red);
+        }
+        .nav-link {
+            font-weight: 600;
+            color: #555 !important;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .nav-link:hover {
+            color: var(--primary-red) !important;
+        }
         @media (max-width: 991px) {
-            .navbar-collapse { background: var(--light-bg); padding: 15px; border-radius: 8px; margin-top: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+            .navbar-collapse {
+                background: var(--light-bg);
+                padding: 15px;
+                border-radius: 8px;
+                margin-top: 10px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
         }
 
         /* 2. HERO SECTION DENGAN COPYWRITING KILLER */
-        .hero-section { background-color: var(--light-bg); padding: 100px 0 140px; text-align: center; }
-        .hero-section h1 { font-weight: 900; font-size: 4rem; letter-spacing: -2px; margin-bottom: 20px; color: var(--dark-black); text-transform: uppercase; }
-        .hero-section h1 span { color: var(--primary-red); }
-        .hero-section p { font-size: 1.25rem; color: #555; max-width: 700px; margin: 0 auto; line-height: 1.6; font-weight: 500; }
+        .hero-section {
+            background-color: var(--light-bg);
+            padding: 100px 0 140px;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-weight: 900;
+            font-size: 4rem;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+            color: var(--dark-black);
+            text-transform: uppercase;
+        }
+        .hero-section h1 span {
+            color: var(--primary-red);
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-weight: 500;
+        }
         @media (max-width: 768px) {
             .hero-section h1 { font-size: 2.8rem; }
             .hero-section p { font-size: 1.05rem; padding: 0 15px; }
         }
 
         /* 3. SEARCH BOX */
-        .search-container { margin-top: -60px; position: relative; z-index: 10; }
-        .search-box { background: var(--light-bg); padding: 35px; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); border: 1px solid var(--border-color); }
-        .search-title { font-size: 0.9rem; font-weight: 800; color: var(--primary-red); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; display: flex; align-items: center; }
-        .form-select { border: 1px solid #ced4da; padding: 14px 15px; font-size: 1rem; border-radius: 8px; cursor: pointer; background-color: #fcfcfc; font-weight: 500; }
-        .form-select:focus { border-color: var(--primary-red); box-shadow: 0 0 0 0.25rem rgba(217, 4, 41, 0.1); }
-        .btn-search { background-color: var(--primary-red); color: white; font-weight: 800; padding: 14px 20px; border-radius: 8px; border: none; width: 100%; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px; }
-        .btn-search:hover { background-color: #b3001b; color: white; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(217, 4, 41, 0.25); }
+        .search-container {
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+        .search-box {
+            background: var(--light-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+            border: 1px solid var(--border-color);
+        }
+        .search-title {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .form-select {
+            border: 1px solid #ced4da;
+            padding: 14px 15px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #fcfcfc;
+            font-weight: 500;
+        }
+        .form-select:focus {
+            border-color: var(--primary-red);
+            box-shadow: 0 0 0 0.25rem rgba(217, 4, 41, 0.1);
+        }
+        .btn-search {
+            background-color: var(--primary-red);
+            color: white;
+            font-weight: 800;
+            padding: 14px 20px;
+            border-radius: 8px;
+            border: none;
+            width: 100%;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-search:hover {
+            background-color: #b3001b;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(217, 4, 41, 0.25);
+        }
 
         /* 4. GALLERY */
-        #hasil-pencarian { display: none; padding: 20px 0; }
-        .gallery-title { font-weight: 800; border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-bottom: 30px; }
-        .gallery-item { background: var(--light-bg); border-radius: 10px; overflow: hidden; border: 1px solid var(--border-color); transition: all 0.3s ease; cursor: pointer; margin-bottom: 30px; position: relative; }
-        .gallery-item:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.08); border-color: #d1d5db; }
-        .gallery-img-wrapper img { width: 100%; height: 240px; object-fit: cover; transition: transform 0.6s ease; }
-        .gallery-item:hover .gallery-img-wrapper img { transform: scale(1.05); }
-        .gallery-info { padding: 20px; }
-        .gallery-info h5 { font-weight: 800; font-size: 1.1rem; margin-bottom: 5px; }
-        .gallery-info p { color: #6c757d; font-size: 0.9rem; margin: 0; }
+        #hasil-pencarian {
+            display: none;
+            padding: 20px 0;
+        }
+        .gallery-title {
+            font-weight: 800;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .gallery-item {
+            background: var(--light-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+            border-color: #d1d5db;
+        }
+        .gallery-img-wrapper img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .gallery-item:hover .gallery-img-wrapper img {
+            transform: scale(1.05);
+        }
+        .gallery-info {
+            padding: 20px;
+        }
+        .gallery-info h5 {
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        .gallery-info p {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin: 0;
+        }
 
-        /* STATUS BADGES & OTHERS */
+        /* 5. ABOUT US */
+        .about-section {
+            padding: 100px 0;
+            background-color: var(--light-bg);
+            border-top: 1px solid var(--border-color);
+        }
+        .section-title {
+            font-weight: 900;
+            color: var(--dark-black);
+            margin-bottom: 25px;
+            font-size: 2.8rem;
+            letter-spacing: -1px;
+        }
+        .section-title span { color: var(--primary-red); }
+        .about-text {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        .mission-card {
+            background: var(--gray-bg);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .mission-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            color: #333;
+            font-weight: 600;
+        }
+        .mission-list i {
+            color: var(--primary-red);
+            margin-top: 5px;
+            margin-right: 15px;
+        }
+        .visi-box {
+            margin-top: 40px;
+            padding-left: 20px;
+            border-left: 4px solid var(--primary-red);
+        }
+        .tagline-text {
+            font-style: italic;
+            font-weight: 800;
+            color: var(--primary-red);
+            text-align: center;
+            font-size: 1rem;
+            margin-top: auto;
+            padding-top: 25px;
+            border-top: 1px dashed #ccc;
+        }
+
+        /* 6. FLOATING WA BUTTON */
+        .float-wa {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: var(--wa-green);
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .float-wa:hover {
+            background-color: #20ba56;
+            color: #FFF;
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 15px 25px rgba(37, 211, 102, 0.5);
+        }
+        @media (max-width: 768px) {
+            .float-wa {
+                width: 55px;
+                height: 55px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 28px;
+            }
+        }
+
+        /* 7. FOOTER COPYRIGHT */
+        .footer-custom {
+            background-color: var(--dark-black);
+            color: #aaa;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 4px solid var(--primary-red);
+        }
+        .footer-custom span {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        /* --- EFEK ENTRY MEWAH (RESPONSIVE VERSION) --- */
+        #preloader {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #000000;
+            display: flex; justify-content: center; align-items: center;
+            z-index: 99999;
+            transition: transform 1.2s cubic-bezier(0.8, 0, 0.2, 1);
+            padding: 20px;
+        }
+        .loader-logo {
+            font-size: clamp(1.8rem, 5vw, 3.5rem);
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: clamp(4px, 2vw, 15px);
+            text-transform: uppercase;
+            text-align: center;
+            white-space: nowrap;
+            animation: revealCinematic 1.8s ease-out forwards;
+        }
+        .loader-logo span {
+            color: var(--primary-red);
+        }
+        @keyframes revealCinematic {
+            0% {
+                opacity: 0;
+                letter-spacing: clamp(10px, 8vw, 30px);
+                filter: blur(15px);
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                letter-spacing: clamp(4px, 2vw, 15px);
+                filter: blur(0);
+                transform: scale(1);
+            }
+        }
+        body.loaded #preloader {
+            transform: translateY(-100%);
+        }
+
+        /* --- TECH TYPEWRITER EFFECT --- */
+        .hero-title {
+            font-weight: 900;
+            font-size: clamp(3rem, 10vw, 6.5rem);
+            line-height: 0.85;
+            letter-spacing: -4px;
+            margin-bottom: 30px;
+            min-height: 1.2em;
+            text-transform: uppercase;
+        }
+        #typed-text {
+            color: var(--dark-black);
+        }
+        #typed-text .highlight {
+            color: var(--primary-red);
+        }
+        .cursor {
+            color: var(--primary-red);
+            font-weight: 100;
+            animation: blink 0.8s infinite;
+            margin-left: 5px;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* --- CONTACT SECTION TECH PANEL --- */
+        .contact-section {
+            padding: 0 0 80px;
+            background-color: var(--light-bg);
+        }
+        .contact-section .container {
+            border-top: 2px dashed #CBD5E1;
+            padding-top: 80px;
+        }
+        .contact-title {
+            font-weight: 900;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .contact-title span { color: var(--primary-red); }
+        .contact-tech-panel {
+            background: #F9F9FB;
+            border: 1px solid #EDEDED;
+            border-radius: 12px;
+            padding: 0;
+            overflow: hidden;
+        }
+        .contact-tech-item { padding: 40px 30px; height: 100%; }
+        @media (min-width: 768px) {
+            .tech-line { border-right: 1px solid #E2E2E2; }
+        }
+        .contact-label {
+            display: flex; align-items: center; gap: 12px;
+            font-weight: 900; font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: var(--dark-black);
+            margin-bottom: 15px; text-transform: uppercase;
+        }
+        .contact-label i { color: var(--primary-red); font-size: 1.2rem; }
+        .contact-value {
+            font-weight: 600; font-size: 0.95rem;
+            color: #6B7280;
+            line-height: 1.6; text-decoration: none; display: block; margin: 0;
+        }
+        a.contact-value:hover { color: var(--primary-red); text-decoration: underline; }
+        .social-tech-box { display: flex; gap: 12px; }
+        .social-btn {
+            width: 40px; height: 40px; border-radius: 8px; background: #fff;
+            border: 1px solid #DDD; display: flex; align-items: center; justify-content: center;
+            color: #333; transition: 0.3s; text-decoration: none;
+        }
+        .social-btn:hover { background: var(--primary-red); color: #fff; border-color: var(--primary-red); transform: translateY(-3px); }
+
+        /* --- STATUS LABEL SYSTEM --- */
+        .gallery-item { position: relative; overflow: hidden; border-radius: 12px; }
         .img-sold-out { filter: grayscale(100%) brightness(0.6); opacity: 0.8; }
-        .status-badge { position: absolute; top: 15px; right: 15px; padding: 6px 12px; border-radius: 4px; font-size: 0.65rem; font-weight: 900; z-index: 10; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .status-badge {
+            position: absolute; top: 15px; right: 15px; padding: 6px 12px;
+            border-radius: 4px; font-size: 0.65rem; font-weight: 900;
+            z-index: 10; text-transform: uppercase; letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
         .badge-available { background: #28a745; color: #fff; }
         .badge-soldout { background: #D90429; color: #fff; }
-        .zoom-badge { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; margin-right: 10px; color: #fff; text-transform: uppercase; }
+        .zoom-badge {
+            display: inline-block; padding: 4px 10px; border-radius: 4px;
+            font-size: 0.7rem; font-weight: 800; margin-right: 10px;
+            color: #fff; text-transform: uppercase;
+        }
 
-        .result-summary { display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 20px 25px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--border-color); margin-bottom: 30px; flex-wrap: wrap; gap: 15px; }
+        /* --- REKAP & PAGINATION FRONTEND --- */
+        .result-summary {
+            display: flex; justify-content: space-between; align-items: center;
+            background: #fff; padding: 20px 25px; border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--border-color);
+            margin-bottom: 30px; flex-wrap: wrap; gap: 15px;
+        }
         .summary-text { font-weight: 900; color: var(--dark-black); font-size: 1.1rem; text-transform: uppercase; }
         .summary-badges { display: flex; gap: 10px; }
         .summary-badges span { padding: 8px 15px; border-radius: 8px; font-size: 0.85rem; font-weight: 800; letter-spacing: 0.5px; }
@@ -119,97 +484,153 @@
         .badge-sold-summary { background: #FEE2E2; color: var(--primary-red); }
 
         .client-pagination { display: flex; justify-content: center; gap: 8px; margin-top: 40px; }
-        .page-btn { width: 45px; height: 45px; border-radius: 10px; border: 2px solid var(--border-color); background: #fff; color: var(--dark-black); font-weight: 800; font-size: 1rem; display: flex; justify-content: center; align-items: center; transition: 0.3s; cursor: pointer; }
+        .page-btn {
+            width: 45px; height: 45px; border-radius: 10px; border: 2px solid var(--border-color);
+            background: #fff; color: var(--dark-black); font-weight: 800; font-size: 1rem;
+            display: flex; justify-content: center; align-items: center; transition: 0.3s; cursor: pointer;
+        }
         .page-btn:hover:not(:disabled) { background: var(--primary-red); color: #fff; border-color: var(--primary-red); transform: translateY(-3px); }
         .page-btn.active { background: var(--primary-red); color: #fff; border-color: var(--primary-red); }
         .page-btn:disabled { opacity: 0.5; cursor: not-allowed; background: #f9f9f9; }
+        /* ========= STAT BAR PREMIUM (FULL WIDTH + BIGGER + RESPONSIVE) ========= */
+.pb-statbar-wrap{ margin-top: 16px; margin-bottom: 34px; }
 
-        /* 5. ABOUT US */
-        .about-section { padding: 100px 0; background-color: var(--light-bg); border-top: 1px solid var(--border-color); }
-        .section-title { font-weight: 900; color: var(--dark-black); margin-bottom: 25px; font-size: 2.8rem; letter-spacing: -1px; }
-        .section-title span { color: var(--primary-red); }
-        .about-text { color: #555; line-height: 1.8; font-size: 1.05rem; }
-        .mission-card { background: var(--gray-bg); padding: 40px; border-radius: 16px; border: 1px solid var(--border-color); height: 100%; display: flex; flex-direction: column; justify-content: center; }
-        .mission-list li { margin-bottom: 15px; display: flex; align-items: flex-start; color: #333; font-weight: 600; }
-        .mission-list i { color: var(--primary-red); margin-top: 5px; margin-right: 15px; }
-        .visi-box { margin-top: 40px; padding-left: 20px; border-left: 4px solid var(--primary-red); }
-        .tagline-text { font-style: italic; font-weight: 800; color: var(--primary-red); text-align: center; font-size: 1rem; margin-top: auto; padding-top: 25px; border-top: 1px dashed #ccc; }
+.pb-statbar{
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  padding: 20px 24px 18px;
+  position: relative;
+  overflow: hidden;
+}
 
-        /* 6. FLOATING WA BUTTON */
-        .float-wa { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: var(--wa-green); color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4); z-index: 9999; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; text-decoration: none; }
-        .float-wa:hover { background-color: #20ba56; color: #FFF; transform: scale(1.1) translateY(-5px); box-shadow: 0 15px 25px rgba(37, 211, 102, 0.5); }
-        @media (max-width: 768px) { .float-wa { width: 55px; height: 55px; bottom: 20px; right: 20px; font-size: 28px; } }
+.pb-statbar:before{
+  content:"";
+  position:absolute;
+  left:0; right:0; top:0;
+  height:2px;
+  background: linear-gradient(90deg, transparent, rgba(217,4,41,.55), transparent);
+  opacity:.75;
+}
 
-        /* 7. FOOTER COPYRIGHT */
-        .footer-custom { background-color: var(--dark-black); color: #aaa; padding: 25px 0; text-align: center; font-size: 0.9rem; border-top: 4px solid var(--primary-red); }
-        .footer-custom span { color: #fff; font-weight: 700; }
+.pb-statbar-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  margin-bottom: 12px;
+}
 
-        /* --- EFEK ENTRY MEWAH --- */
-        #preloader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000000; display: flex; justify-content: center; align-items: center; z-index: 99999; transition: transform 1.2s cubic-bezier(0.8, 0, 0.2, 1); padding: 20px; }
-        .loader-logo { font-size: clamp(1.8rem, 5vw, 3.5rem); font-weight: 900; color: #ffffff; letter-spacing: clamp(4px, 2vw, 15px); text-transform: uppercase; text-align: center; white-space: nowrap; animation: revealCinematic 1.8s ease-out forwards; }
-        .loader-logo span { color: var(--primary-red); }
-        @keyframes revealCinematic { 0% { opacity: 0; letter-spacing: clamp(10px, 8vw, 30px); filter: blur(15px); transform: scale(1.1); } 100% { opacity: 1; letter-spacing: clamp(4px, 2vw, 15px); filter: blur(0); transform: scale(1); } }
-        body.loaded #preloader { transform: translateY(-100%); }
+.pb-statbar-note{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6c757d;
+}
 
-        /* --- TECH TYPEWRITER EFFECT --- */
-        .hero-title { font-weight: 900; font-size: clamp(3rem, 10vw, 6.5rem); line-height: 0.85; letter-spacing: -4px; margin-bottom: 30px; min-height: 1.2em; text-transform: uppercase; }
-        #typed-text { color: var(--dark-black); }
-        #typed-text .highlight { color: var(--primary-red); }
-        .cursor { color: var(--primary-red); font-weight: 100; animation: blink 0.8s infinite; margin-left: 5px; }
-        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+.pb-statbar-row{
+  display:flex;
+  align-items:stretch;
+  justify-content:space-between;
+  gap: 0;
+  padding-top: 6px;
+}
 
-        /* --- CONTACT SECTION TECH PANEL --- */
-        .contact-section { padding: 0 0 80px; background-color: var(--light-bg); }
-        .contact-section .container { border-top: 2px dashed #CBD5E1; padding-top: 80px; }
-        .contact-title { font-weight: 900; font-size: 3rem; text-align: center; margin-bottom: 40px; text-transform: uppercase; }
-        .contact-title span { color: var(--primary-red); }
-        .contact-tech-panel { background: #F9F9FB; border: 1px solid #EDEDED; border-radius: 12px; padding: 0; overflow: hidden; }
-        .contact-tech-item { padding: 40px 30px; height: 100%; }
-        @media (min-width: 768px) { .tech-line { border-right: 1px solid #E2E2E2; } }
-        .contact-label { display: flex; align-items: center; gap: 12px; font-weight: 900; font-size: 0.8rem; letter-spacing: 1px; color: var(--dark-black); margin-bottom: 15px; text-transform: uppercase; }
-        .contact-label i { color: var(--primary-red); font-size: 1.2rem; }
-        .contact-value { font-weight: 600; font-size: 0.95rem; color: #6B7280; line-height: 1.6; text-decoration: none; display: block; margin: 0; }
-        a.contact-value:hover { color: var(--primary-red); text-decoration: underline; }
-        .social-tech-box { display: flex; gap: 12px; }
-        .social-btn { width: 40px; height: 40px; border-radius: 8px; background: #fff; border: 1px solid #DDD; display: flex; align-items: center; justify-content: center; color: #333; transition: 0.3s; text-decoration: none; }
-        .social-btn:hover { background: var(--primary-red); color: #fff; border-color: var(--primary-red); transform: translateY(-3px); }
+.pb-stat{
+  flex:1;
+  min-width:0;
+  padding: 12px 16px 8px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  transition: transform .2s ease;
+}
 
-        /* ========= STAT BAR PREMIUM ========= */
-        .pb-statbar-wrap{ margin-top: 16px; margin-bottom: 34px; }
-        .pb-statbar{ background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.06); padding: 20px 24px 18px; position: relative; overflow: hidden; }
-        .pb-statbar:before{ content:""; position:absolute; left:0; right:0; top:0; height:2px; background: linear-gradient(90deg, transparent, rgba(217,4,41,.55), transparent); opacity:.75; }
-        .pb-statbar-head{ display:flex; justify-content:space-between; align-items:center; gap:14px; margin-bottom: 12px; }
-        .pb-statbar-note{ font-size: 0.9rem; font-weight: 600; color: #6c757d; }
-        .pb-statbar-row{ display:flex; align-items:stretch; justify-content:space-between; gap: 0; padding-top: 6px; }
-        .pb-stat{ flex:1; min-width:0; padding: 12px 16px 8px; display:flex; flex-direction:column; justify-content:center; transition: transform .2s ease; }
-        .pb-stat:hover{ transform: translateY(-1px); }
-        .pb-stat-main{ display:flex; align-items:baseline; justify-content:center; gap: 10px; }
-        .pb-stat-num{ font-size: 2.85rem; font-weight: 600; letter-spacing: -0.3px; color: var(--dark-black); line-height: 1; }
-        .pb-stat-label{ font-size: 1.02rem; font-weight: 700; color: #555; white-space: nowrap; }
-        .pb-divider-line{ width:1px; background: linear-gradient(180deg, transparent, #E5E7EB, transparent); margin: 6px 0; }
-        .pb-accent{ height:2px; width: 52px; margin: 12px auto 0; border-radius: 999px; background: rgba(15,15,15,.08); }
-        .pb-good .pb-stat-num{ color:#16a34a; }
-        .pb-bad .pb-stat-num{ color: var(--primary-red); }
-        .pb-good .pb-accent{ background: rgba(22,163,74,.18); }
-        .pb-bad .pb-accent{ background: rgba(217,4,41,.18); }
+.pb-stat:hover{ transform: translateY(-1px); }
 
-        @media (max-width: 992px){
-            .pb-statbar{ padding: 18px 18px 14px; }
-            .pb-statbar-row{ flex-wrap: wrap; }
-            .pb-divider-line{ display:none; }
-            .pb-stat{ flex: 0 0 50%; padding: 12px 12px 8px; }
-            .pb-stat-main{ justify-content:flex-start; }
-            .pb-accent{ margin-left: 0; }
-            .pb-stat-num{ font-size: 1.75rem; }
-            .pb-stat-label{ font-size: 0.98rem; }
-        }
-        @media (max-width: 576px){
-            .pb-statbar-row{ justify-content: center !important; }
-            .pb-stat{ flex: 0 0 100%; text-align: center; }
-            .pb-stat-main{ justify-content: center !important; text-align: center; }
-            .pb-accent{ margin: 12px auto 0 !important; }
-            .pb-stat-label{ text-align: center; }
-        }
+.pb-stat-main{
+  display:flex;
+  align-items:baseline;
+  justify-content:center;
+  gap: 10px;
+}
+
+.pb-stat-num{
+  font-size: 2.85rem;
+  font-weight: 600;          /* <<< ini kuncinya */
+  letter-spacing: -0.3px;    /* luxury typography biasanya lebih halus */
+  color: var(--dark-black);
+  line-height: 1;
+}
+
+.pb-stat-label{
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* divider premium */
+.pb-divider-line{
+  width:1px;
+  background: linear-gradient(180deg, transparent, #E5E7EB, transparent);
+  margin: 6px 0;
+}
+
+/* accent underline */
+.pb-accent{
+  height:2px;
+  width: 52px;
+  margin: 12px auto 0;
+  border-radius: 999px;
+  background: rgba(15,15,15,.08);
+}
+
+/* warna status */
+.pb-good .pb-stat-num{ color:#16a34a; }
+.pb-bad .pb-stat-num{ color: var(--primary-red); }
+
+.pb-good .pb-accent{ background: rgba(22,163,74,.18); }
+.pb-bad .pb-accent{ background: rgba(217,4,41,.18); }
+
+/* ===== Tablet (<= 992): 2 kolom ===== */
+@media (max-width: 992px){
+  .pb-statbar{ padding: 18px 18px 14px; }
+  .pb-statbar-row{ flex-wrap: wrap; }
+  .pb-divider-line{ display:none; }
+
+  .pb-stat{ flex: 0 0 50%; padding: 12px 12px 8px; }
+  .pb-stat-main{ justify-content:flex-start; }
+  .pb-accent{ margin-left: 0; }
+
+  .pb-stat-num{ font-size: 1.75rem; }
+  .pb-stat-label{ font-size: 0.98rem; }
+}
+
+/* ===== FIX MOBILE: CENTER SEMUA STAT ===== */
+@media (max-width: 576px){
+  .pb-statbar-row{
+    justify-content: center !important;
+  }
+
+  .pb-stat{
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .pb-stat-main{
+    justify-content: center !important;   /* ini kunci: angka+label jadi center */
+    text-align: center;
+  }
+
+  .pb-accent{
+    margin: 12px auto 0 !important;       /* underline center */
+  }
+
+  .pb-stat-label{
+    text-align: center;
+  }
+} 
     </style>
 </head>
 <body>
@@ -269,48 +690,56 @@
             </div>
         </div>
     </div>
-
-    <div class="container pb-statbar-wrap">
-        <div class="pb-statbar">
-            <div class="pb-statbar-head">
-                <div class="pb-statbar-note" id="pbStatsNote">Berdasarkan data ketersediaan real-time saat ini.</div>
-            </div>
-            <div class="pb-statbar-row">
-                <div class="pb-stat">
-                    <div class="pb-stat-main">
-                        <span class="pb-stat-num" id="statTotal">...</span>
-                        <span class="pb-stat-label">Total Titik Lokasi</span>
-                    </div>
-                    <div class="pb-accent"></div>
-                </div>
-                <div class="pb-divider-line"></div>
-                <div class="pb-stat">
-                    <div class="pb-stat-main">
-                        <span class="pb-stat-num" id="statKota">...</span>
-                        <span class="pb-stat-label">Kota</span>
-                    </div>
-                    <div class="pb-accent"></div>
-                </div>
-                <div class="pb-divider-line"></div>
-                <div class="pb-stat pb-good">
-                    <div class="pb-stat-main">
-                        <span class="pb-stat-num" id="statTersedia">...</span>
-                        <span class="pb-stat-label">Lokasi Tersedia</span>
-                    </div>
-                    <div class="pb-accent"></div>
-                </div>
-                <div class="pb-divider-line"></div>
-                <div class="pb-stat pb-bad">
-                    <div class="pb-stat-main">
-                        <span class="pb-stat-num" id="statTersewa">...</span>
-                        <span class="pb-stat-label">Lokasi Tersewa</span>
-                    </div>
-                    <div class="pb-accent"></div>
-                </div>
-            </div>
-        </div>
+<!-- === STATISTIK LOKASI (FULL WIDTH / DEFAULT ANGKA ADA) === -->
+<div class="container pb-statbar-wrap">
+  <div class="pb-statbar">
+    <div class="pb-statbar-head">
+      <!-- MATCH 1:1 sama Filter Lokasi -->
+     
+      <div class="pb-statbar-note" id="pbStatsNote"></div>
     </div>
 
+    <div class="pb-statbar-row">
+      <div class="pb-stat">
+        <div class="pb-stat-main">
+          <span class="pb-stat-num" id="statTotal">129</span>
+          <span class="pb-stat-label">Total Titik Lokasi</span>
+        </div>
+        <div class="pb-accent"></div>
+      </div>
+
+      <div class="pb-divider-line"></div>
+
+      <div class="pb-stat">
+        <div class="pb-stat-main">
+          <span class="pb-stat-num" id="statKota">19</span>
+          <span class="pb-stat-label">Kota</span>
+        </div>
+        <div class="pb-accent"></div>
+      </div>
+
+      <div class="pb-divider-line"></div>
+
+      <div class="pb-stat pb-good">
+        <div class="pb-stat-main">
+          <span class="pb-stat-num" id="statTersedia">129</span>
+          <span class="pb-stat-label">Lokasi Tersedia</span>
+        </div>
+        <div class="pb-accent"></div>
+      </div>
+
+      <div class="pb-divider-line"></div>
+
+      <div class="pb-stat pb-bad">
+        <div class="pb-stat-main">
+          <span class="pb-stat-num" id="statTersewa">23</span>
+          <span class="pb-stat-label">Lokasi Tersewa</span>
+        </div>
+        <div class="pb-accent"></div>
+      </div>
+    </div>
+  </div>
+</div>
     <section id="hasil-pencarian">
         <div class="container">
             <div id="summary-container" style="display: none;"></div>
@@ -356,12 +785,14 @@
         <div class="container">
             <div class="p-4 p-lg-5" style="border: 1px solid var(--border-color); border-radius: 16px; background: var(--gray-bg);">
                 <div class="row align-items-center">
+
                     <div class="col-lg-4 mb-4 mb-lg-0 pe-lg-4 tech-line-seo" style="border-bottom: 1px solid #EEE; border-right: none; padding-bottom: 25px;">
                         <style>
                             @media (min-width: 992px) {
                                 .tech-line-seo { border-right: 2px solid #EEE !important; border-bottom: none !important; padding-bottom: 0 !important; }
                             }
                         </style>
+
                         <div class="d-flex align-items-center mb-3">
                             <div style="width: 50px; height: 50px; background: var(--primary-red); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.5rem;">
                                 <i class="fa-solid fa-map-location-dot"></i>
@@ -373,6 +804,7 @@
 
                     <div class="col-lg-8 ps-lg-5">
                         <h5 class="fw-800 text-dark mb-3" style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Layanan Sewa Billboard & Baliho:</h5>
+
                         <div class="row g-2">
                             <div class="col-md-4 col-6">
                                 <ul class="list-unstyled mb-0" style="font-size: 0.85rem; color: #666;">
@@ -438,6 +870,17 @@
         </div>
     </section>
 
+    <section class="py-5 d-none" style="background: #fff; border-top: 1px solid #eee;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-muted" style="font-size: 0.85rem; line-height: 1.6;">
+                    <h4 class="fw-bold text-dark mb-3" style="font-size: 1.1rem;">Layanan Sewa Billboard Seluruh Indonesia</h4>
+                    <p>Cari titik reklame strategis di: <strong>DI Yogyakarta (Sleman, Bantul, Jogja Kota), DKI Jakarta, Jawa Barat (Bandung, Bekasi), Jawa Tengah (Semarang, Solo), Jawa Timur (Surabaya, Malang), Bali (Denpasar), Sumatra (Medan, Palembang), Sulawesi (Makassar)</strong>, dan berbagai kabupaten lainnya di Indonesia melalui sistem filter lokasi kami. <strong>Petani Besi</strong> menjamin konstruksi kokoh dan eksposur visual maksimal untuk setiap kampanye brand Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer-custom">
         <div class="container">
             <p class="m-0">&copy; 2026 <span>PETANI BESI</span>. All rights reserved.</p>
@@ -459,7 +902,9 @@
                 if (this.hash !== "") {
                     e.preventDefault();
                     const hash = this.hash;
-                    $('html, body').animate({ scrollTop: $(hash).offset().top - 100 }, 800);
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 100
+                    }, 800);
                 }
             });
 
@@ -488,51 +933,82 @@
             }
             setTimeout(typeEffect, 2500);
 
-            // ==============================================================
-            // 1. GET DATA STATISTIK UNTUK STAT-BAR
-            // ==============================================================
-            $.get('/api/landing-stats', function(data) {
-                $('#statTotal').text(data.total_titik);
-                $('#statKota').text(data.total_kota);
-                $('#statTersedia').text(data.tersedia);
-                $('#statTersewa').text(data.tersewa);
-            });
+            // API EMSIFA & MODE ANTI-ERROR (OFFLINE)
+            const apiProvinsi = 'https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json';
+            const apiKabupaten = 'https://www.emsifa.com/api-wilayah-indonesia/api/regencies/';
 
-            // ==============================================================
-            // 2. GET DROPDOWN PROVINSI (HANYA DARI DATABASE)
-            // ==============================================================
-            $.get('/api/active-provinces', function(provinces) {
-                let options = '<option value="">-- Pilih Provinsi --</option>';
-                provinces.forEach(prov => {
-                    options += `<option value="${prov}">${prov}</option>`;
+            const fallbackProvinces = [
+                { id: "34", name: "DI YOGYAKARTA" },
+                { id: "31", name: "DKI JAKARTA" },
+                { id: "32", name: "JAWA BARAT" },
+                { id: "33", name: "JAWA TENGAH" },
+                { id: "35", name: "JAWA TIMUR" },
+                { id: "51", name: "BALI" }
+            ];
+
+            const fallbackRegencies = {
+                "34": [{name: "KABUPATEN SLEMAN"}, {name: "KABUPATEN BANTUL"}, {name: "KOTA YOGYAKARTA"}],
+                "31": [{name: "KOTA JAKARTA SELATAN"}, {name: "KOTA JAKARTA PUSAT"}],
+                "33": [{name: "KOTA SEMARANG"}, {name: "KOTA SURAKARTA"}]
+            };
+
+            fetch(apiProvinsi)
+                .then(response => response.json())
+                .then(provinces => {
+                    let options = '<option value="">-- Semua Provinsi --</option>';
+                    provinces.forEach(prov => {
+                        options += `<option value="${prov.name}" data-id="${prov.id}">${prov.name}</option>`;
+                    });
+                    $('#select-provinsi').html(options);
+                })
+                .catch(error => {
+                    let options = '<option value="">-- Semua Provinsi (Mode Lokal) --</option>';
+                    fallbackProvinces.forEach(prov => {
+                        options += `<option value="${prov.name}" data-id="${prov.id}">${prov.name}</option>`;
+                    });
+                    $('#select-provinsi').html(options);
                 });
-                $('#select-provinsi').html(options);
-            });
 
-            // ==============================================================
-            // 3. GET DROPDOWN KABUPATEN BERDASARKAN PROVINSI
-            // ==============================================================
             $('#select-provinsi').change(function() {
-                const valProvinsi = $(this).val();
+                const provId = $(this).find(':selected').data('id');
                 const kabSelect = $('#select-kabupaten');
 
-                if(valProvinsi) {
+                if(provId) {
                     kabSelect.html('<option value="">Memuat Kabupaten...</option>').prop('disabled', true);
-                    $.get('/api/active-kabupaten', { provinsi: valProvinsi }, function(regencies) {
-                        let options = '<option value="SEMUA">-- Semua Kabupaten/Kota --</option>';
-                        regencies.forEach(reg => {
-                            options += `<option value="${reg}">${reg}</option>`;
+                    fetch(`${apiKabupaten}${provId}.json`)
+                        .then(response => response.json())
+                        .then(regencies => {
+                            let options = '<option value="SEMUA">-- Semua Kabupaten/Kota --</option>';
+                            regencies.forEach(reg => {
+                                options += `<option value="${reg.name}">${reg.name}</option>`;
+                            });
+                            kabSelect.html(options).prop('disabled', false);
+                        })
+                        .catch(error => {
+                            let options = '<option value="SEMUA">-- Semua Kabupaten/Kota --</option>';
+                            if(fallbackRegencies[provId]) {
+                                fallbackRegencies[provId].forEach(reg => {
+                                    options += `<option value="${reg.name}">${reg.name}</option>`;
+                                });
+                            }
+                            kabSelect.html(options).prop('disabled', false);
                         });
-                        kabSelect.html(options).prop('disabled', false);
-                    });
                 } else {
                     kabSelect.html('<option value="">Pilih Provinsi Dahulu</option>').prop('disabled', true);
                 }
             });
 
             // ==============================================================
-            // 4. SISTEM FILTER & TAMPIL GALLERY KE BACKEND
+            // AMBIL DATA DARI BACKEND MYSQL LARAVEL SECARA ASYNCHRONOUS
             // ==============================================================
+            let databaseReklame = [];
+
+            // Fetch data dari API saat halaman landing diload secara diam-diam (background)
+            $.get('/api/balihos-new', function(data) {
+                databaseReklame = data;
+            });
+
+            // --- VARIABEL PAGINATION FRONTEND ---
             let clientCurrentPage = 1;
             const clientRowsPerPage = 9;
             let currentFilteredData = [];
@@ -547,21 +1023,22 @@
                 }
 
                 $("#hasil-pencarian").fadeIn(400);
+
                 let teksLokasi = valKabupaten !== "SEMUA" && valKabupaten !== "" ? `${valKabupaten}, ${valProvinsi}` : valProvinsi;
                 $("#teks-hasil").html(`Titik Lokasi di <span class="text-danger">${teksLokasi}</span>`);
 
-                // Menampilkan text loading
-                $("#gallery-container").html('<div class="col-12 text-center py-5"><i class="fa-solid fa-spinner fa-spin fs-2 text-danger"></i><p class="mt-2 fw-bold text-muted">Mencari data...</p></div>');
-                $("#summary-container").hide();
-                $("#client-pagination").empty();
+                // Filter dari databaseReklame yang didapat dari Backend
+                let db = databaseReklame;
 
-                // Request ke backend lewat URL parameter
-                $.get('/api/balihos-new', { provinsi: valProvinsi, kabupaten: valKabupaten }, function(data) {
-                    currentFilteredData = data;
-                    clientCurrentPage = 1;
-                    renderClientGallery();
-                    $('html, body').animate({ scrollTop: $("#hasil-pencarian").offset().top - 120 }, 500);
-                });
+                currentFilteredData = db.filter(item => item.provinsi === valProvinsi);
+                if(valKabupaten !== "" && valKabupaten !== "SEMUA") {
+                    currentFilteredData = currentFilteredData.filter(item => item.kabupaten === valKabupaten);
+                }
+
+                clientCurrentPage = 1;
+                renderClientGallery();
+
+                $('html, body').animate({ scrollTop: $("#hasil-pencarian").offset().top - 120 }, 500);
             });
 
             window.changeClientPage = function(page) {
